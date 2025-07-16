@@ -27,5 +27,6 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		json = consumoApi.obtenerDatos("https://www.omdbapi.com/?t=Grey%27s+Anatomy&Season=1&episode=1&apikey=855bfea4");
 		DatosEpisodio episodios = conversor.obtenerDatos(json, DatosEpisodio.class);
 		System.out.println(episodios);
+
 	}
 }
