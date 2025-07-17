@@ -17,7 +17,7 @@ public class Principal {
     private final String API_KEY = "&apikey=855bfea4";
     private ConvierteDatos conversor = new ConvierteDatos();
 
-    public void muetraElMenu(){
+    public void muestraElMenu(){
         System.out.println("Por escribe el nombre de la serie que deseas buscar.");
 
         //Busca los datos generales de las series
@@ -36,13 +36,14 @@ public class Principal {
         //temporadas.forEach(System.out::println);
 
         //Mostrar solo el titulo de los episodios para las temporadas
-        for (int i = 0; i < datos.totalDeTemporadas() ; i++) {
-            List<DatosEpisodio> episodiosTemporada = temporadas.get(i).episodios();
-            for (int j = 0; j < episodiosTemporada.size(); j++) {
-                System.out.println(episodiosTemporada.get(j).titulo());
-            }
-        }
+//        for (int i = 0; i < datos.totalDeTemporadas() ; i++) {
+//            List<DatosEpisodio> episodiosTemporada = temporadas.get(i).episodios();
+//            for (int j = 0; j < episodiosTemporada.size(); j++) {
+//                System.out.println(episodiosTemporada.get(j).titulo());
+//            }
+//        }
         //Aplicando funciones lambda
-
+        temporadas.forEach(t -> t.episodios()
+                  .forEach(e -> System.out.println(e.titulo())));
     }
 }
