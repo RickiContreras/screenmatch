@@ -40,10 +40,9 @@ public class Principal {
             List<DatosEpisodio> episodiosTemporada = temporadas.get(i).episodios();
             for (int j = 0; j < episodiosTemporada.size(); j++) {
                 System.out.println(episodiosTemporada.get(j).titulo());
-
             }
-
         }
+        //Aplicando funciones lambda
 
     }
 }
