@@ -1,5 +1,6 @@
 package com.aluracursos.screenmatch;
 
+import com.aluracursos.screenmatch.Principal.EjemploStreams;
 import com.aluracursos.screenmatch.Principal.Principal;
 import com.aluracursos.screenmatch.model.DatosEpisodio;
 import com.aluracursos.screenmatch.model.DatosSerie;
@@ -24,6 +25,8 @@ public class ScreenmatchApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		Principal principal = new Principal();
 		principal.muestraElMenu();
+//		EjemploStreams ejemploStreams = new EjemploStreams();
+//		ejemploStreams.muestraEjemplo();
 
 
 	}
